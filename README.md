@@ -1,4 +1,4 @@
-# A simple example of generating random quotes
+# A VERY simple example of generating random quotes
 ![image](https://github.com/Fyz-dev/random-quote-machine/assets/63561158/36c43b90-069a-45e4-8afc-1aa66c474c99)
 
 The example is implemented using JQuery, AJAX and Ninjas API technologies.
