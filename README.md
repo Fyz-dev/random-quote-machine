@@ -14,5 +14,5 @@ git clone https://github.com/Fyz-dev/random-quote-machine.git
 2. Environment setup
 You need to get the Ninjas API key and change the variable located in [env.js](env.js)
 ```JavaScript
-export const ENV_NINJAS_API_KEY = "***";
+export const ENV_NINJAS_API_KEY = "***"; // Replace *** with your value
 ```
