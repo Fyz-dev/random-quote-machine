@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+  --primary: #47234b;
+  --primary-hover: #6c4570;
+  --primary-shadow: #47234b7c;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--primary);
+  margin-top: 1em;
+  padding: 0;
+}
+
+.btn {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  height: 40px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.2rem;
+  border: none;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    0 10px 15px -3px var(--primary-shadow);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn:active {
+  scale: 0.9;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    0 5px 10px 3px var(--primary-shadow);
+}
+
+.wrapper-main {
+  display: flex;
+}
+
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+  max-width: 850px;
+  padding: 4rem;
+  padding-top: 0;
+  gap: 2rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 50px 5px #00000040;
+  background: linear-gradient(
+    158deg,
+    rgba(255, 202, 203) 0%,
+    rgba(222, 231, 255) 70%
+  );
+  border-radius: 0.2rem;
+  margin: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 0;
+  gap: 0.5rem;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.quote-icon {
+  position: absolute;
+  right: 0;
+  opacity: 0.1;
+}
+
+.quote-icon::before {
+  font-size: 160px;
+}
+
+.quote {
+  text-align: left;
+  align-self: flex-start;
+  font-size: 64px;
+  margin-bottom: 2rem;
+}
+
+.quote-author {
+  align-self: flex-end;
+  font-size: large;
+}
+
+.text-category {
+  color: var(--primary);
+  text-transform: uppercase;
+}
